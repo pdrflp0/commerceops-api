@@ -21,7 +21,7 @@ Out of scope for v1: payment processing, shipping carrier integrations, marketpl
 
 ## Planned stack
 
-- Java 21 and Spring Boot 3
+- Java 21 and Spring Boot 4
 - Spring Web, Spring Data JPA, Spring Security, and Bean Validation
 - PostgreSQL and Flyway
 - Docker Compose
@@ -40,6 +40,23 @@ Admin dashboard / HTTP client
             v
         PostgreSQL
 ```
+
+## Running locally
+
+Requirements: Java 21.
+
+```bash
+./mvnw test
+./mvnw spring-boot:run
+```
+
+On Windows, use `mvnw.cmd` instead of `./mvnw`.
+
+Useful endpoints:
+
+- `GET /api/v1`
+- `GET /actuator/health`
+- `GET /actuator/info`
 
 ## Documentation
 
